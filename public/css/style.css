@@ -1,0 +1,122 @@
+.border-bottom {
+    border-bottom: 2px solid #4c204e !important;
+}
+
+body {
+    background: url('/img/body.jpg') center;
+}
+
+.delo {
+    padding-top: 330px;
+}
+
+@media (max-width: 600px) {
+    .delo {
+        padding-top: 380px;
+    }
+}
+
+.back {
+    background: url('/img/back-container.jpg') center;
+    background-size: cover;
+}
+
+.text {
+    font-family: Myriad Pro Regular;
+    font-size: 15pt;
+    color: #3d3d3d;
+}
+
+@font-face {
+    font-family: "PT Sans bold";
+    src: url("/font/2223.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Myriad Pro Regular";
+    src: url("/font/8143.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Courier New Regular";
+    src: url("/font/сourier.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.profile {
+    font-family: Courier New Regular;
+    font-size: 30pt;
+}
+
+@media (max-width: 600px) {
+    .profile {
+        font-size: 20pt;
+    }
+}
+
+.item {
+    font-family: PT Sans bold;
+    font-size: 22.43pt;
+}
+
+.label-checkbox {
+    font-family: PT Sans bold;
+    font-size: 11pt;
+}
+
+@media (min-width: 600px) {
+    .label-checkbox {
+        font-size: 21pt;
+    }
+}
+
+@media (max-width: 1024px) {
+    .mt-10 {
+        margin-top: 6rem !important;
+    }
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    color: #000;
+    cursor: default;
+    font-weight: normal;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+label:before {
+    content: " ";
+    color: #000;
+    display: inline-block;
+    /* шрифт Awesome*/
+    font: 20px/30px FontAwesome;
+    margin-right: 5px;
+    position: relative;
+    text-align: center;
+    text-indent: 0px;
+    width: 30px;
+    height: 34px;
+    background: url("/img/checkbox.png") no-repeat center;
+    background-size: cover;
+}
+
+input:checked+label:before {
+    /* глифон - галочка */
+    background: url("/img/checked.png") no-repeat center;
+    background-size: cover;
+    /* content: "\f00c"; */
+}
+
+input:disabled+label:before {
+    background: #eee;
+    color: #aaa;
+}

@@ -1,0 +1,83 @@
+.vue-slider-mark-label {
+    white-space: normal!important;
+    text-align: center;
+}
+
+.vue-slider-process {
+    opacity: 0!important;
+}
+
+.vue-slider-dot-handle {
+    opacity: 0;
+}
+
+.custom-tooltip {
+    width: 17px;
+    height: 14px;
+    background: url('/img/tooltip.png');
+}
+
+.vue-slider-rail {
+    background-color: #4c204e;
+}
+
+.vue-slider-dot-tooltip-top {
+    top: 0;
+}
+
+.vue-slider-ltr .vue-slider-mark-label,
+.vue-slider-rtl .vue-slider-mark-label {
+    margin-left: 100px;
+    text-align: left;
+    margin-top: 30px;
+    font-family: "PTSans Bold", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.vue-slider-mark:last-child .vue-slider-mark-label {
+    margin-left: -83px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.vue-slider-mark:first-child .vue-slider-mark-step,
+.vue-slider-mark:last-child .vue-slider-mark-step {
+    display: block;
+    position: relative;
+    width: 3px;
+    background-color: #4c204e;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.vue-slider-mark-step {
+    position: relative;
+    width: 3px;
+    background-color: #4c204e;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+@media (min-width: 1005px) {
+    .vue-slider-ltr .vue-slider-mark-label,
+    .vue-slider-rtl .vue-slider-mark-label {
+        width: 200px;
+    }
+}
+
+@media (max-width: 1005px) {
+    .vue-slider-ltr .vue-slider-mark-label,
+    .vue-slider-rtl .vue-slider-mark-label {
+        margin-left: 25px;
+        text-align: left;
+        margin-top: 30px;
+    }
+    .vue-slider-mark:last-child .vue-slider-mark-label {
+        margin-left: -30px;
+        text-align: left;
+        margin-top: 30px;
+    }
+}
